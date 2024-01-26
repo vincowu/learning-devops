@@ -8,4 +8,8 @@ Frames Concept
 - Introduces MAC Address (Unique Identifier) that is 48 bits in hex for manufacturer
 - MAC Address is uniquely attached to specific piece of hardware
     - 2 parts:
-        - OUI (Organizationally Unique Identifier)
+        1. OUI (Organizationally Unique Identifier)
+            - assigned to companies who manufacture network devices
+        2. NIC (Network Interface Controller)
+            - together with OUI should mean MAC address is globally unique
+- Layer 2 can be transmitted onto shared physical medium by layer 1 (light is sent across shared medium)
