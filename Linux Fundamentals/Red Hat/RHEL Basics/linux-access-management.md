@@ -7,7 +7,7 @@ Methods of accessing Linux Systems:
 2. su command
     - become other user and execute commands as that user
     - example of command su - userName (su - root or su -)
-3. sudo command
+3. sudo command0
     - allows user to become another user and execute commands as another
     - sudo -i
 4. SSH command
