@@ -11,7 +11,7 @@ One difference between soft and hard links are that soft links can point to othe
 ln -FLAGS SOURCE_FILE OPTION_SYMBOLIC_LINK
 ````
 Some key flag would be:
-    -s will specifiy that this will be a symbolic link, otherwise it will be a hard link
+    -s will specify that this will be a symbolic link, otherwise it will be a hard link
 
 ## Unlinking
 To unlink a symlink, you can use:
@@ -22,3 +22,10 @@ or
 
 unlink linked_file.format
 ````
+
+## Key differences between hardlink and soft link
+- Hard Link has an additonal name for existing file while special link points to another file
+- Hard Link can't be created for directories while soft lnik can
+- Hard Link can't cross file system boundaries or partiions while softlink can
+- Hard Link has same inode(unique value for each file) number and permissions as original file while soft link has different inode and file 
+- Soft Link doesn't contain file data
