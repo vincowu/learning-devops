@@ -25,3 +25,9 @@ else
 fi
 ````
 
+# For Loops
+````
+for user in billy bob joe ; do useradd -m $user ; done
+grep -E 'billy|bob|joe' /etc/passwd
+
+````
