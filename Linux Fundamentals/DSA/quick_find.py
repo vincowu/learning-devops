@@ -1,22 +1,20 @@
 class QuickFind:
-    def __init__(self, arr, p, q):
-        self.arr = arr
-        self.p = p
-        self.q = q
-    def find(self):
-        print('hi')
-        if self.arr[self.p] == self.arr[self.q]:
-            return true
-        else:
-            return false
-    def union(self):
-        old_id_value = self.arr[self.p]
-        updated_id_value = self.arr[self.q]
-        for i in range(len(self.arr) - 1):
-            if self.arr[i] == old_id_value:
-                self.arr[i] = updated_id_value
+    def __init__(self, n):
+        self.arr = [x for x in range(n)]
+
+    def find(self,p,q):
+        print(self.arr[p] == self.arr[q])
+        
+    def union(self,p,q):
+        old = self.arr[p]
+        new = self.arr[q]
+        for i in range(len(self.arr)):
+            if self.arr[i] == old:
+                self.arr[i] = new
         print(self.arr)
 
-
-test = QuickFind([0,1,1,8,8,0,0,1,8,8],6,1)
-print(test.union())
+t = QuickFind(5)
+t.find(1,3)
+t.union(1,2)
+t.union(3,1)
+t.union(4,0)
